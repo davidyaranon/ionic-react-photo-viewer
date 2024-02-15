@@ -10,6 +10,7 @@ import { renderToString } from "react-dom/server";
 const IonPhotoViewer: React.FC<IonPhotoViewerProps> = ({
   children,
   title,
+  icon,
   src,
   showHeader = true,
 }) => {
@@ -30,7 +31,7 @@ const IonPhotoViewer: React.FC<IonPhotoViewerProps> = ({
           el.style.gridTemplateColumns = 'repeat(auto-fit, 40px)';
           el.style.gridTemplateRows = 'repeat(auto-fit, 40px)';
           el.style.justifyContent = 'left';
-          el.append(createElementFromHTML(renderToString(<IonHeaderComponent title={title} />)));
+          el.append(createElementFromHTML(renderToString(<IonHeaderComponent title={title} icon={icon} />)));
         }
       },
       onClick: (e, el, pswpInstance) => {

@@ -1,6 +1,6 @@
 {
   "name": "@codesyntax/ionic-react-photo-viewer",
-  "version": "1.14.0",
+  "version": "1.14.0-icon-support",
   "description": "Ionic React photo viewer component",
   "author": "bipoza",
   "license": "MIT",
