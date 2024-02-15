@@ -9,12 +9,12 @@ import {
 } from "@ionic/react";
 import { arrowBack } from "ionicons/icons";
 
-const IonHeaderComponent:  React.FC<{ title: string }> = ({ title }) => (
+const IonHeaderComponent: React.FC<{ title: string, icon: string | undefined }> = ({ title, icon }) => (
   <IonHeader class="header-no-shadow">
     <IonToolbar>
       <IonButtons slot="start">
         <IonButton id="ion-header-close-button">
-          <IonIcon slot="icon-only" icon={arrowBack} />
+          <IonIcon slot="icon-only" icon={icon ?? arrowBack} />
         </IonButton>
       </IonButtons>
       <IonTitle>{title}</IonTitle>
