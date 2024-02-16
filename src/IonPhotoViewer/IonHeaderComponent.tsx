@@ -13,11 +13,11 @@ const IonHeaderComponent: React.FC<{ title: string, icon: string | undefined }> 
   <IonHeader class="header-no-shadow">
     <IonToolbar>
       <IonButtons slot="start">
-        <IonButton id="ion-header-close-button">
+        <IonButton style={{ fontSize: '1.15em', marginRight: '15px' }} id="ion-header-close-button">
           <IonIcon slot="icon-only" icon={icon ?? arrowBack} />
         </IonButton>
+        <p style={{ fontSize: "1.25rem" }}>{title}</p>
       </IonButtons>
-      <IonTitle>{title}</IonTitle>
     </IonToolbar>
   </IonHeader>
 );
